@@ -14,6 +14,7 @@
 %
 % Fabricio Baglivo 2016
 clear all
+close all
 clc
 
 x1=0;
@@ -29,9 +30,24 @@ y(2)=0;
 y(3)=0;
 y(4)=0;
 
-for k=3:100000
+% Signal calculation
+
+for k=2:100000
    
-    x(k)=1.4+0.3*x(k-2)-x(k-1)^2;
+    x(k+1)=1.4+0.3*x(k-1)-x(k)^2;
     y(k+1)=1.4+0.3*y(k-1)-[u*x(k)+(1-u)*y(k)]*y(k);
     
 end
+
+%Graphical verification
+%%
+
+for k=50000:60000
+
+    
+    scatter(x(k+1),x(k),'filled','r');
+%     scatter3(x(k),x(k+2),x(k+4),'filled','r');
+    hold on
+    
+end
+
