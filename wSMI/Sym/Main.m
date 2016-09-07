@@ -17,8 +17,8 @@ close all
 addpath(genpath('D:\_INECO\Procesamiento\Toolbox\fieldtrip\'))
 
 
-input_files={'C:\Users\Fabri\Documents\Documentos\PhD\Papers\EnProceso\Metodos\Scripts\Mats\signals_0.5coupled.mat'};
-output_files={'C:\Users\Fabri\Documents\Documentos\PhD\Papers\EnProceso\Metodos\Scripts\Mats\SYM_signals_0.5coupled.mat'};
+input_files={'C:\Users\Fabri\Documents\Documentos\PhD\Papers\EnProceso\Metodos\Scripts\Mats\signals_0.6coupled.mat'};
+output_files={'C:\Users\Fabri\Documents\Documentos\PhD\Papers\EnProceso\Metodos\Scripts\Mats\SYM_signals_0.6coupled.mat'};
 
 
 for i=1:size(input_files,2) %Condition Numbers

@@ -21,7 +21,7 @@ clc
 x1=0;
 x2=0
 
-u=0.5;  % Coupling Strengh
+u=0.6;  % Coupling Strengh
 
 b=0.3;
 d=0.3;
