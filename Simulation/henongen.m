@@ -21,10 +21,10 @@ clc
 x1=0;
 x2=0
 
-u=0.6;  % Coupling Strengh
+u=0.9;  % Coupling Strengh
 
 b=0.3;
-d=0.3;
+d=0.1;
 
 x(1)=x1;
 x(2)=x2;
@@ -36,7 +36,7 @@ y(4)=0;
 
 % Signal calculation
 
-for k=2:100000
+for k=2:60000
    
     x(k+1)=1.4+b*x(k-1)-x(k)^2;
     y(k+1)=1.4+d*y(k-1)-[u*x(k)+(1-u)*y(k)]*y(k);
@@ -45,15 +45,15 @@ end
 
 %Graphical verification
 %%
-
-for k=50000:60000
-
-    
-    scatter(x(k+1),x(k),'filled','r');
-%     scatter3(x(k),x(k+2),x(k+4),'filled','r');
-    hold on
-    
-end
+% 
+% for k=50000:60000
+% 
+%     
+%     scatter(x(k+1),x(k),'filled','r');
+% %     scatter3(x(k),x(k+2),x(k+4),'filled','r');
+%     hold on
+%     
+% end
 
 %%
 

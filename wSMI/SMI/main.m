@@ -3,8 +3,8 @@
 %
 
 
-input_files={'C:\Users\Fabri\Documents\Documentos\PhD\Papers\EnProceso\Metodos\Scripts\Mats\SYM_signals_0.6coupled.mat'};
-output_files={'C:\Users\Fabri\Documents\Documentos\PhD\Papers\EnProceso\Metodos\Scripts\Mats\SMI_signals_0.6coupled.mat'};
+input_files={'C:\Users\Fabri\Documents\Documentos\PhD\Papers\EnProceso\Metodos\Scripts\Mats\SYM_signals_0.9coupled.mat'};
+output_files={'C:\Users\Fabri\Documents\Documentos\PhD\Papers\EnProceso\Metodos\Scripts\Mats\SMI_signals_0.9coupled.mat'};
 
 
 cond(1).name=[ input_files{1} ];
